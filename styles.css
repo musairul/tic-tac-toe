@@ -1,0 +1,53 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+body {
+  background-color: lightblue;
+}
+
+button {
+  background-color: lightcoral;
+  font-size: larger;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid white;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.1s; /* Smooth transitions */
+}
+
+.container {
+  display: grid;
+  padding: 50px;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  justify-content: center;
+}
+
+.cell {
+  /*centres text*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 3px solid white;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: salmon;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+  background-color: rgb(165, 85, 76);
+  transform: scale(0.98); /* Slightly reduces size to mimic pressing effect */
+}
